@@ -1,0 +1,117 @@
+/* Add Content Container Styling */
+.add-content-container {
+    background: #f4f7fb;
+    padding: 40px;
+    width: 100vw;
+    height: 100vh; /* Ensures the container takes up the full height */
+    margin: 0; /* Removed auto margin to fit the entire height */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; /* Ensures no scrollbars */
+    box-sizing: border-box; /* Includes padding in height calculation */
+}
+
+/* Header Styling */
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form Group Styling */
+.add-content-form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+    font-size: 16px;
+    color: #090909;
+    margin-bottom: 8px;
+    display: block;
+    padding-left: 10px;
+}
+.add-content-form-group label{
+    color: #050505;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #040404;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #070707;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Button Styling */
+.add-content-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-content-button:hover {
+    background-color: #0056b3;
+}
+
+/* Message Styling */
+.add-content-message {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f8d7da;
+    color: #0b0b0b;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.add-content-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.add-content-message.error {
+    background-color: #f8d7da;
+    color: #050505;
+    border-color: #f5c6cb;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .add-content-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .add-content-button {
+        font-size: 16px;
+    }
+}

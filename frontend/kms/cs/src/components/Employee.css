@@ -1,0 +1,113 @@
+/* Dashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #f9f6f6;
+    color: rgb(8, 8, 8);
+    font-size: 24px;
+    font-weight: bold;
+}
+.sidebar {
+    background-color: #4878e1;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    
+}
+.sidebar {
+    background-color: #2c62d5;
+    color: #fff;
+    padding: 20px;
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-around; /* Distribute space evenly */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.sidebar-nav {
+    display: flex; /* Change the nav to a flex container */
+    justify-content: space-between; /* Distribute links evenly */
+    padding: 10px;
+    background-color: #515151;
+}
+
+.sidebar-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0; /* Remove margin since we want them close together */
+    font-size: 16px;
+    flex: 1; /* Each link takes equal space */
+    text-align: center; /* Center the text in each link */
+}
+
+.sidebar-nav a:hover {
+    text-decoration: underline;
+}
+
+
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+    width: 50%;
+    
+}
+
+/* Style for the search input */
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 20px;
+    border: 1px solid #212121;
+    border-radius: 8px 8px 8px 8px;
+    outline: none;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #1f5668; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(94, 196, 243, 0.5); /* Blue glow */
+}
+
+/* Style for the search button */
+.search-bar button {
+    padding: 10px 20px;
+    border: 1px solid #5b5454;
+    border-left: none;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #343a40; /* Dark background color */
+    color: #f0e3e3; /* White text color */
+    font-size: 16px;
+    cursor: pointer; 
+    
+}
+
+.search-bar button:hover {
+    background-color: #52b0b7; /* Slightly lighter on hover */
+    
+}
+
+
+.content {
+    color: #0f0e0e;
+    font-size: 16px;
+    padding: 10px;
+}

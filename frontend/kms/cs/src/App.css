@@ -1,0 +1,53 @@
+/* src/App.css */
+
+/* Overall app styling */
+.app {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks children vertically */
+  height: 100vh; /* Full viewport height */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+}
+
+/* Header styles */
+.header {
+  background-color: #4a90e2; /* Header background color */
+  color: white; /* Text color */
+  padding: 20px; /* Padding for the header */
+  text-align: center; /* Centers the header text */
+  font-size: 1.5rem; /* Font size for header */
+}
+
+/* Main content styles */
+.main-content {
+  display: flex; /* Enables flexbox layout for main content */
+  flex: 1; /* Takes up remaining space */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #f5f5f5; /* Sidebar background color */
+  border-right: 1px solid #ccc; /* Right border for separation */
+  padding: 20px; /* Padding for sidebar */
+}
+
+/* Dashboard styles */
+.dashboard {
+  flex: 1; /* Takes up remaining space */
+  padding: 20px; /* Padding for dashboard */
+  background-color: #ffffff; /* Dashboard background color */
+}
+
+/* Additional responsive design (optional) */
+@media (max-width: 768px) {
+  .main-content {
+      flex-direction: column; /* Stack sidebar and dashboard vertically on small screens */
+  }
+
+  .sidebar {
+      width: 100%; /* Sidebar takes full width on small screens */
+      border-right: none; /* Remove right border on small screens */
+      border-bottom: 1px solid #ccc; /* Optional bottom border for separation */
+  }
+}

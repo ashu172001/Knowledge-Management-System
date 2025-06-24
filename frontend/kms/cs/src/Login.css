@@ -1,0 +1,97 @@
+/* Gradient Background */
+body {
+    background: linear-gradient(to right, #4d4c4d, #b0ebf7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Centered Login Container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Login Box Styling */
+  .login-box {
+    background: rgb(255, 255, 255);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    position: relative;
+  }
+  
+  /* Login Title */
+  h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Group */
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #dedede;
+    padding: 10px;
+    
+  }
+  
+  /* Select & Input Styling */
+  select,
+  input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Login Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #4fc9f1, #ff7eb3);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #4fc9f1, #6aa3ff);
+  }
+  
+  /* Footer Links */
+  .login-footer {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-footer a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .login-footer a:hover {
+    color: #4af744;
+  }
+  
