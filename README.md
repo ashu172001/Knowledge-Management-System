@@ -52,4 +52,17 @@ This system is essential for knowledge-driven organizations aiming to enhance pr
 ---
 
 ## 🏗 Project Structure
-
+KMS/
+├── backend/
+│ ├── models/ # Mongoose schemas for users, categories, and documents
+│ ├── routes/ # for Naigation
+│ └── index.js # Express server
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/ # React components like Dashboard, UploadForm, etc.
+│ │ ├── pages/ # Pages like Login, Admin Dashboard, Category View
+│ │ └── App.js # Routes and layout
+│ └── public/
+│
+└── README.md
